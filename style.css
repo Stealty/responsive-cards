@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #F6F9FF;
+    height: 100%;
+    width: 100%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #434343
+}
+
+main.card {
+    display: flex;
+    padding: 32px;
+}
+
+main.card section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+main.card section.card:first-child {
+    margin-left: 0;
+}
+
+main.card section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.card section.card img {
+    width: 100%;
+}
+main.card section.card h3 {
+    font-size: 100%;
+    margin: 16px 0px;
+}
+main.card section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.card section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+}
+
+main.card section.card.contact button {
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+main.card section.card.shop button {
+    background: linear-gradient(to right, #3E8AFF, #BBDBFF);
+}
+main.card section.card.about button {
+    background: linear-gradient(to right, #FE5F8F, #ffc7d9);
+}
+
+main.card section.card.contact {
+    box-shadow: 30px 30px 50px -10px #DBC4FF;
+}
+main.card section.card.shop {
+    box-shadow: 30px 30px 50px -10px #AFD6FF;
+}
+main.card section.card.about {
+    box-shadow: 30px 30px 50px -10px #FFC1B5;
+}
+
+@media screen and (max-width: 720px) {
+    main.card {
+        flex-direction: column;
+    }
+
+    main.card section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.card section.card:last-child{
+        margin-bottom: 0;
+    }
+
+    main.card section.card button{
+        font-size: 70%;
+    }
+}
